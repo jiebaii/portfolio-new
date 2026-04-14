@@ -46,7 +46,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; a
 .label-text { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
 
 /* HERO TOP */
-.hero-top { display: grid; grid-template-columns: 1fr 1fr 1fr 100px; align-items: start; padding-top: 52px; border-bottom: 1px solid var(--border-light); }
+.hero-top { display: grid; grid-template-columns: 1fr 1fr 1fr 100px; align-items: start; padding-top: 72px; border-bottom: 1px solid var(--border-light); }
 .hero-top-col { padding: 20px 24px; border-right: 1px solid var(--border-light); min-height: 0; }
 .hero-top-col:last-child { border-right: none; padding: 0; overflow: hidden; }
 .hero-top-title { font-size: 12px; font-weight: 400; color: var(--text-2); line-height: 1.5; }
