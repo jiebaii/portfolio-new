@@ -243,3 +243,4 @@ footer { background: var(--footer-bg); color: var(--footer-text); }
   .footer-top { grid-template-columns: 1fr; }
   .section, .page-top, .project-hero, .journey-section, .case-body, .who-section, .about-body, .playground-body, .hero-badges, .hero-cta-row, .footer-top, .footer-cols, .footer-bottom { padding-left: 20px; padding-right: 20px; }
 }
+/* cache bust Tue Apr 14 16:45:53 CEST 2026 */
