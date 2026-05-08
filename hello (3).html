@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jie Bai</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #f4f4f1;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 52px 24px 48px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .say-hello {
+    background: #1a1a18;
+    color: #f4f4f1;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    padding: 9px 16px;
+    border-radius: 24px;
+    text-decoration: none;
+    transition: background 0.18s, transform 0.15s;
+    white-space: nowrap;
+  }
+  .say-hello:hover { background: #6398c0; transform: scale(1.04); }
+
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 360px;
+    margin-bottom: 20px;
+  }
+
+  header { text-align: center; margin-bottom: 48px; }
+
+  h1 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    color: #1a1a18;
+    letter-spacing: -0.03em;
+    margin-bottom: 12px;
+    line-height: 1;
+    text-align: left;
+  }
+
+  .tagline {
+    font-size: 12px;
+    color: #7a7874;
+    line-height: 1.65;
+    max-width: 268px;
+    margin: 0 auto 14px;
+    font-weight: 400;
+  }
+
+  .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    justify-content: center;
+  }
+
+  .badge {
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #6398c0;
+    border: 1px solid #6398c0;
+    padding: 3px 9px;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .icon-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    gap: 9px;
+    transition: transform 0.18s ease;
+  }
+  .icon-link:hover { transform: translateY(-5px); }
+  .icon-link:hover .icon-label { color: #b05c3a; }
+
+  .icon-wrap { width: 100%; aspect-ratio: 1; }
+  .icon-wrap svg { width: 100%; height: 100%; display: block; }
+
+  .icon-label {
+    font-size: 13px;
+    color: #1a1a18;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    transition: color 0.18s;
+  }
+
+  footer {
+    margin-top: 48px;
+    font-size: 10px;
+    color: #a8a5a0;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 2;
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <h1>Jie Bai</h1>
+  <a class="say-hello" href="mailto:Jie.CREATE@proton.me">Say Hello ↗</a>
+</div>
+
+<header>
+  <p class="tagline">12 years in Brand Strategy × UX Research — from market logic to human-AI interaction.</p>
+  <div class="badges">
+    <span class="badge">German Design Award Winner</span>
+    <span class="badge">ACM IUI Workshop Author</span>
+  </div>
+</header>
+
+<div class="grid">
+
+  <!-- 1. LinkedIn: folder + network, no figure -->
+  <a class="icon-link" href="https://www.linkedin.com/in/jiebai321/" target="_blank" rel="noopener">
+    <div class="icon-wrap">
+      <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="15" y="50" width="52" height="16" rx="5" fill="#8ab8d6"/>
+        <rect x="15" y="60" width="130" height="86" rx="8" fill="#6398c0"/>
+        <rect x="15" y="60" width="130" height="9" fill="#8ab8d6" opacity="0.3"/>
+        <!-- centre node -->
+        <circle cx="80" cy="90" r="9" fill="white" opacity="0.9"/>
+        <!-- outer nodes -->
+        <circle cx="38" cy="72" r="7" fill="white" opacity="0.65"/>
+        <circle cx="122" cy="72" r="7" fill="white" opacity="0.65"/>
+        <circle cx="38" cy="118" r="7" fill="white" opacity="0.65"/>
+        <circle cx="122" cy="118" r="7" fill="white" opacity="0.65"/>
+        <circle cx="80" cy="128" r="7" fill="white" opacity="0.65"/>
+        <!-- connections from centre -->
+        <line x1="72" y1="84" x2="44" y2="76" stroke="white" stroke-width="2" opacity="0.5"/>
+        <line x1="88" y1="84" x2="116" y2="76" stroke="white" stroke-width="2" opacity="0.5"/>
+        <line x1="72" y1="96" x2="44" y2="114" stroke="white" stroke-width="2" opacity="0.5"/>
+        <line x1="88" y1="96" x2="116" y2="114" stroke="white" stroke-width="2" opacity="0.5"/>
+        <line x1="80" y1="99" x2="80" y2="122" stroke="white" stroke-width="2" opacity="0.5"/>
+        <!-- connection top nodes to each other -->
+        <line x1="45" y1="72" x2="115" y2="72" stroke="white" stroke-width="1.5" opacity="0.3"/>
+        <!-- avatars in nodes: simple face dots -->
+        <circle cx="38" cy="70" r="2.5" fill="#6398c0" opacity="0.7"/>
+        <circle cx="122" cy="70" r="2.5" fill="#6398c0" opacity="0.7"/>
+      </svg>
+    </div>
+    <span class="icon-label">LinkedIn</span>
+  </a>
+
+  <!-- 2. Portfolio: vertical brush touching canvas -->
+  <a class="icon-link" href="https://jiebai.framer.ai/" target="_blank" rel="noopener">
+    <div class="icon-wrap">
+      <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="15" y="50" width="52" height="16" rx="5" fill="#8ab8d6"/>
+        <rect x="15" y="60" width="130" height="86" rx="8" fill="#6398c0"/>
+        <rect x="15" y="60" width="130" height="9" fill="#8ab8d6" opacity="0.3"/>
+        <!-- canvas on folder -->
+        <rect x="24" y="72" width="112" height="62" rx="3" fill="white" opacity="0.9"/>
+        <!-- paint strokes on canvas -->
+        <rect x="34" y="82" width="32" height="9" rx="4.5" fill="#f5a870" opacity="0.85"/>
+        <rect x="44" y="96" width="48" height="9" rx="4.5" fill="#6398c0" opacity="0.45"/>
+        <rect x="32" y="110" width="25" height="9" rx="4.5" fill="#a0d870" opacity="0.75"/>
+        <rect x="62" y="110" width="34" height="9" rx="4.5" fill="#f0d060" opacity="0.7"/>
+
+      </svg>
+    </div>
+    <span class="icon-label">Portfolio</span>
+  </a>
+
+  <!-- 3. ACM IUI Research -->
+  <a class="icon-link" href="https://dl.acm.org/doi/full/10.1145/3742414.3794961" target="_blank" rel="noopener">
+    <div class="icon-wrap">
+      <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="15" y="50" width="52" height="16" rx="5" fill="#8ab8d6"/>
+        <rect x="15" y="60" width="130" height="86" rx="8" fill="#6398c0"/>
+        <rect x="15" y="60" width="130" height="9" fill="#8ab8d6" opacity="0.3"/>
+        <!-- paper sticking out -->
+        <rect x="48" y="28" width="60" height="74" rx="3" fill="white" opacity="0.93"/>
+        <rect x="57" y="40" width="42" height="3" rx="1.5" fill="#c8c5c0"/>
+        <rect x="57" y="48" width="34" height="3" rx="1.5" fill="#c8c5c0"/>
+        <rect x="57" y="56" width="38" height="3" rx="1.5" fill="#c8c5c0"/>
+        <rect x="57" y="64" width="28" height="3" rx="1.5" fill="#c8c5c0"/>
+        <rect x="57" y="72" width="36" height="3" rx="1.5" fill="#c8c5c0"/>
+        <rect x="56" y="80" width="44" height="16" rx="3" fill="#6398c0" opacity="0.75"/>
+        <text x="78" y="91" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="6.5" fill="white" text-anchor="middle" font-weight="700">ACM IUI 2026</text>
+        <!-- small reading person -->
+        <circle cx="124" cy="40" r="7" fill="#e8c49a"/>
+        <path d="M118 38 Q124 30 130 38" fill="#2d1f0e"/>
+        <rect x="117" y="46" width="14" height="12" rx="3" fill="#6a8a5a"/>
+        <path d="M114 56 Q124 51 134 56 L134 64 Q124 59 114 64Z" fill="white" opacity="0.9"/>
+        <line x1="124" y1="52" x2="124" y2="63" stroke="#ccc" stroke-width="1.2"/>
+      </svg>
+    </div>
+    <span class="icon-label">ACM IUI Research</span>
+  </a>
+
+  <!-- 4. More About Jie (Instagram) -->
+  <a class="icon-link" href="https://www.instagram.com/littleleft/" target="_blank" rel="noopener">
+    <div class="icon-wrap">
+      <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="15" y="50" width="52" height="16" rx="5" fill="#8ab8d6"/>
+        <rect x="15" y="60" width="130" height="86" rx="8" fill="#6398c0"/>
+        <rect x="15" y="60" width="130" height="9" fill="#8ab8d6" opacity="0.3"/>
+        <!-- polaroid 1: back-left -->
+        <g transform="rotate(-10 42 110)">
+          <rect x="18" y="68" width="48" height="58" rx="2" fill="white" opacity="0.88"/>
+          <rect x="22" y="72" width="40" height="32" rx="1" fill="#f0c090" opacity="0.7"/>
+          <circle cx="42" cy="84" r="8" fill="#e8c49a"/>
+          <path d="M35 81 Q42 74 49 81" fill="#2d1f0e"/>
+        </g>
+        <!-- polaroid 2: front-centre -->
+        <g transform="rotate(4 80 110)">
+          <rect x="52" y="64" width="50" height="60" rx="2" fill="white"/>
+          <rect x="56" y="68" width="42" height="34" rx="1" fill="#a8d4f2" opacity="0.7"/>
+          <path d="M60 100 Q67 82 74 92 Q78 78 84 92 Q89 82 96 100Z" fill="#6ab86a" opacity="0.75"/>
+        </g>
+        <!-- polaroid 3: back-right -->
+        <g transform="rotate(12 118 108)">
+          <rect x="94" y="66" width="46" height="56" rx="2" fill="white" opacity="0.85"/>
+          <rect x="98" y="70" width="38" height="30" rx="1" fill="#c8e8a8" opacity="0.7"/>
+          <circle cx="110" cy="83" r="7" fill="#f5a870" opacity="0.75"/>
+          <circle cx="124" cy="86" r="9" fill="#6ab8d8" opacity="0.6"/>
+        </g>
+      </svg>
+    </div>
+    <span class="icon-label">More About Jie</span>
+  </a>
+
+</div>
+
+<footer>
+  Brand Strategy · UX Research · Human-AI Interaction<br>
+  DDX Munich
+</footer>
+
+</body>
+</html>
